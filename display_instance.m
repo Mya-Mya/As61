@@ -1,0 +1,13 @@
+function display_instance(instance)
+arguments
+    instance struct
+end
+for i=1:instance.N
+    o = instance.operation_s(i);
+    disp( ...
+        "("+i+")"+ ...
+        o.AircraftType+" Rt."+o.Route+ ...
+        " @"+instance.dinit_s(i) ...
+    )
+end
+end
